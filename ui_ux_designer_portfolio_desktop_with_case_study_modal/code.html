@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en" style="">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Muhammad Fauzi Yusuf — UI/UX Designer Portfolio</title>
+  <!-- Google Fonts: Plus Jakarta Sans / Poppins equivalent hierarchy -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Poppins:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet">
+  <!-- Material Symbols Outlined -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <!-- Tailwind CSS v3 -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary": "#ffffff",
+            "surface-bright": "#f9f9ff",
+            "secondary": "#00658b",
+            "on-secondary-container": "#00597a",
+            "primary-container": "#8acff8",
+            "surface-variant": "#d8e3fb",
+            "inverse-on-surface": "#ecf1ff",
+            "secondary-fixed-dim": "#7fd0ff",
+            "surface-container": "#e7eeff",
+            "surface-container-lowest": "#ffffff",
+            "on-surface-variant": "#40484e",
+            "surface": "#f9f9ff",
+            "on-primary": "#ffffff",
+            "on-secondary": "#ffffff",
+            "secondary-fixed": "#c5e7ff",
+            "on-error": "#ffffff",
+            "surface-container-low": "#f0f3ff",
+            "on-tertiary-fixed-variant": "#3c494f",
+            "on-background": "#111c2d",
+            "tertiary-fixed-dim": "#bbc8d0",
+            "tertiary": "#546067",
+            "inverse-surface": "#263143",
+            "outline": "#70787e",
+            "surface-container-highest": "#d8e3fb",
+            "primary-fixed": "#c4e7ff",
+            "tertiary-fixed": "#d7e4ec",
+            "primary-fixed-dim": "#8acff8",
+            "on-error-container": "#93000a",
+            "tertiary-container": "#bcc9d1",
+            "secondary-container": "#7fd0ff",
+            "on-primary-fixed": "#001e2d",
+            "primary": "#0b658a",
+            "error": "#ba1a1a",
+            "outline-variant": "#bfc7ce",
+            "on-tertiary-fixed": "#111d23",
+            "inverse-primary": "#8acff8",
+            "surface-dim": "#cfdaf2",
+            "surface-tint": "#0b658a",
+            "on-secondary-fixed": "#001e2d",
+            "on-tertiary-container": "#48555b",
+            "on-primary-fixed-variant": "#004c69",
+            "background": "#f9f9ff",
+            "surface-container-high": "#dee8ff",
+            "on-secondary-fixed-variant": "#004c6a",
+            "on-primary-container": "#00597a",
+            "error-container": "#ffdad6",
+            "on-surface": "#111c2d"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin": "3rem",
+            "gutter": "1.5rem",
+            "space-lg": "1.5rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "gutter-mobile": "1rem",
+            "margin-mobile": "1.25rem",
+            "space-md": "1rem",
+            "space-xl": "2.5rem"
+          },
+          "fontFamily": {
+            "display-xl-mobile": ["Plus Jakarta Sans", "Poppins", "sans-serif"],
+            "label-md": ["Plus Jakarta Sans", "Poppins", "sans-serif"],
+            "headline-sm": ["Plus Jakarta Sans", "Poppins", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "Poppins", "sans-serif"],
+            "headline-md": ["Plus Jakarta Sans", "Poppins", "sans-serif"],
+            "body-lg": ["Plus Jakarta Sans", "Poppins", "sans-serif"],
+            "display-lg-mobile": ["Plus Jakarta Sans", "Poppins", "sans-serif"],
+            "display-xl": ["Plus Jakarta Sans", "Poppins", "sans-serif"],
+            "display-lg": ["Plus Jakarta Sans", "Poppins", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "Poppins", "sans-serif"],
+            "headline-lg": ["Plus Jakarta Sans", "Poppins", "sans-serif"],
+            "label-lg": ["Plus Jakarta Sans", "Poppins", "sans-serif"],
+            "label-caps": ["Plus Jakarta Sans", "Poppins", "sans-serif"]
+          },
+          "fontSize": {
+            "display-xl-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "display-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "display-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+            "body-sm": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+
+    .level-1-card {
+      box-shadow: 0 2px 12px -2px rgba(30, 41, 59, 0.04), 0 1px 3px rgba(30, 41, 59, 0.02);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .level-1-card:hover {
+      box-shadow: 0 12px 32px -4px rgba(30, 41, 59, 0.08), 0 4px 12px -2px rgba(30, 41, 59, 0.03);
+      transform: translateY(-4px);
+    }
+
+    /* Modal custom scrollbar */
+    .modal-scroll::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .modal-scroll::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .modal-scroll::-webkit-scrollbar-thumb {
+      background: #bfc7ce;
+      border-radius: 9999px;
+    }
+
+    .modal-scroll::-webkit-scrollbar-thumb:hover {
+      background: #8acff8;
+    }
+  </style>
+</head>
+
+<body
+  class="bg-surface-container-lowest text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-fixed">
+  <!-- ================= TOP APP BAR / FLOATING DOCK ================= -->
+  <!-- Conforms to TopNavBar in Shared Components JSON -->
+  <header
+    class="fixed top-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-6xl rounded-full z-50 bg-surface-container-lowest/80 dark:bg-inverse-surface/80 backdrop-blur-md border border-outline-variant/40 dark:border-outline/40 shadow-sm hover:shadow-md transition-shadow">
+    <div class="flex justify-between items-center px-6 py-3 w-full">
+      <!-- Brand Logo -->
+      <a class="flex items-center gap-2 group" href="#home">
+        <span
+          class="text-headline-sm font-headline-sm font-bold text-on-surface dark:text-inverse-on-surface tracking-tight">
+          Muhammad Fauzi Yusuf
+        </span>
+        <span
+          class="w-2.5 h-2.5 rounded-full bg-primary-container inline-block shadow-sm group-hover:scale-125 transition-transform duration-200"></span>
+      </a>
+      <!-- Desktop Navigation Links from JSON -->
+      <nav class="hidden md:flex items-center gap-7">
+        <a class="text-label-lg font-label-lg text-primary dark:text-primary-container font-semibold transition-colors duration-200"
+          href="#home">Home</a>
+        <a class="text-label-lg font-label-lg text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary dark:hover:text-primary-container transition-colors duration-200"
+          href="#about">About</a>
+        <a class="text-label-lg font-label-lg text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary dark:hover:text-primary-container transition-colors duration-200"
+          href="#projects">Projects</a>
+        <a class="text-label-lg font-label-lg text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary dark:hover:text-primary-container transition-colors duration-200"
+          href="#experience">Experience</a>
+        <a class="text-label-lg font-label-lg text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary dark:hover:text-primary-container transition-colors duration-200"
+          href="#education">Education</a>
+        <a class="text-label-lg font-label-lg text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary dark:hover:text-primary-container transition-colors duration-200"
+          href="#contact">Contact</a>
+      </nav>
+      <!-- Trailing Action Pill Button from JSON -->
+      <div class="flex items-center gap-3">
+        <a class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary-container text-on-primary-fixed text-label-lg font-label-lg hover:bg-secondary-fixed-dim transition-all shadow-sm active:scale-95 duration-150"
+          href="#contact">
+          <span class="material-symbols-outlined text-[18px]" data-icon="mail">mail</span>
+          <span class="">Get in Touch</span>
+        </a>
+        <a class="sm:hidden p-2 rounded-full bg-surface-container text-primary" href="#contact">
+          <span class="material-symbols-outlined" data-icon="mail">mail</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="w-full overflow-hidden">
+    <!-- 1. HERO SECTION (#home) -->
+    <section class="min-h-screen pt-36 pb-20 px-6 max-w-6xl mx-auto flex items-center relative" id="home">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center w-full">
+        <!-- Left Column: Copy & Actions -->
+        <div class="lg:col-span-7 flex flex-col items-start space-y-6">
+          <!-- Status Badge -->
+          <div
+            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container border border-outline-variant/30 text-on-surface">
+            <span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span>
+            <span class="text-label-md font-label-md tracking-wide text-secondary">Open to New Opportunities</span>
+          </div>
+          <!-- Main Headlines -->
+          <div class="space-y-2">
+            <h1 class="text-display-lg md:text-display-xl font-display-xl text-on-surface tracking-tight">
+              Hi, I'm <span class="text-primary font-extrabold">Muhammad Fauzi Yusuf</span>
+            </h1>
+            <p class="text-headline-md font-headline-md text-primary font-semibold">
+              UI/UX Designer
+            </p>
+          </div>
+          <!-- Tagline -->
+          <p class="text-body-lg font-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+            I design simple, intuitive, and user-friendly digital experiences.
+          </p>
+          <!-- CTAs -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <button
+              class="open-case-study px-7 py-3.5 rounded-full bg-primary-container text-on-primary-fixed text-label-lg font-label-lg hover:bg-secondary-fixed-dim transition-all shadow-sm hover:shadow active:scale-95 inline-flex items-center gap-2 cursor-pointer"
+              type="button">
+              <span class="">View My Projects</span>
+              <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+            </button>
+            <a class="px-7 py-3.5 rounded-full bg-surface-container-lowest border border-outline-variant/60 text-on-surface text-label-lg font-label-lg hover:bg-surface-container-low hover:border-primary-container transition-all active:scale-95"
+              href="#about">
+              About Me
+            </a>
+          </div>
+          <!-- Quick Highlight Metrics -->
+          <div class="grid grid-cols-3 gap-6 pt-6 border-t border-outline-variant/20 w-full max-w-lg mt-4">
+            <div>
+              <p class="text-headline-md font-headline-md text-on-surface font-bold">100%</p>
+              <p class="text-body-sm font-body-sm text-tertiary">User-Centric</p>
+            </div>
+            <div>
+              <p class="text-headline-md font-headline-md text-on-surface font-bold">Figma</p>
+              <p class="text-body-sm font-body-sm text-tertiary">Core Specialty</p>
+            </div>
+            <div>
+              <p class="text-headline-md font-headline-md text-on-surface font-bold">Clean</p>
+              <p class="text-body-sm font-body-sm text-tertiary">Design Systems</p>
+            </div>
+          </div>
+        </div>
+        <!-- Right Column: Showcase Portrait with Float Badges -->
+        <div class="lg:col-span-5 relative flex justify-center items-center">
+          <!-- Subtle Atmospheric Glow -->
+          <div class="absolute w-72 h-72 md:w-96 md:h-96 rounded-full bg-primary-container/20 blur-3xl -z-10"></div>
+          <div class="relative w-full max-w-md">
+            <!-- Main Portrait Card Container -->
+            <div
+              class="rounded-3xl p-3 bg-surface-container-lowest border border-outline-variant/40 shadow-xl overflow-hidden relative group">
+              <div class="w-full aspect-square rounded-2xl overflow-hidden bg-surface-container-low">
+                <img alt="Friendly young modern UI/UX designer portrait in a clean bright studio setting"
+                  class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUXTgN-80vlTDEcEzD8QYxqOX2slEPSOtGd_bd-ATSntMyxT1IFY-Fruszr4QT-N5URDGrJUAbjLC8YOgEMogECeEoxkLP80T993tr5-x74Ps7AHxu2HcbeAajdPRebXE3BbTDI0oKmRJxJf7Er3O9elrUnPxvyx2HbEgTveaHnRF5MXHjRQ-4qdt7nC1XmLu7_TP7vneK-7ge_oyDs28EGzQw_k0e8xapPZ4E6_sphxCtwBPVP9SUwJwBMlLoUR8fC-mWux47ktQW8Q">
+              </div>
+            </div>
+            <!-- Floating Feature Tag 1: Top Right -->
+            <div
+              class="absolute -top-4 -right-4 px-4 py-2.5 rounded-full bg-surface-container-lowest border border-outline-variant/40 shadow-md flex items-center gap-2.5 animate-bounce"
+              style="animation-duration: 4s;">
+              <span class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-[16px]" data-icon="palette">palette</span>
+              </span>
+              <span class="text-label-md font-label-md text-on-surface">Minimalist &amp; Intuitive</span>
+            </div>
+            <!-- Floating Feature Tag 2: Bottom Left -->
+            <div
+              class="absolute -bottom-4 -left-4 px-4 py-2.5 rounded-full bg-surface-container-lowest border border-outline-variant/40 shadow-md flex items-center gap-2.5">
+              <span
+                class="w-7 h-7 rounded-full bg-primary-container flex items-center justify-center text-on-primary-fixed">
+                <span class="material-symbols-outlined text-[16px]" data-icon="psychology">psychology</span>
+              </span>
+              <span class="text-label-md font-label-md text-on-surface">Design Thinker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 2. ABOUT ME SECTION (#about, bg #F8FBFD) -->
+    <section class="py-24 px-6 bg-surface-bright border-y border-outline-variant/20" id="about">
+      <div class="max-w-6xl mx-auto space-y-16">
+        <!-- Header & Bio -->
+        <div class="max-w-3xl space-y-4">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-secondary text-label-caps font-label-caps">
+            ABOUT ME
+          </div>
+          <h2 class="text-headline-lg font-headline-lg text-on-surface">
+            Passionate about simple, functional, &amp; user-friendly experiences.
+          </h2>
+          <p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
+            I'm a UI/UX Designer who is passionate about creating simple, functional, and user-friendly digital
+            experiences. I enjoy exploring design, understanding user needs, and turning ideas into clear and engaging
+            interfaces.
+          </p>
+        </div>
+        <!-- 6 Skills Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Skill Card 1 -->
+          <div
+            class="level-1-card bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-6 flex flex-col justify-between h-full">
+            <div>
+              <div
+                class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary mb-5">
+                <span class="material-symbols-outlined text-[24px]" data-icon="devices">devices</span>
+              </div>
+              <h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">UI Design</h3>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">
+                Crafting aesthetically balanced, responsive, and visually harmonious user interfaces.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="text-label-md font-label-md text-primary">Aesthetic Mastery</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+            </div>
+          </div>
+          <!-- Skill Card 2 -->
+          <div
+            class="level-1-card bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-6 flex flex-col justify-between h-full">
+            <div>
+              <div
+                class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary mb-5">
+                <span class="material-symbols-outlined text-[24px]" data-icon="route">route</span>
+              </div>
+              <h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">UX Design</h3>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">
+                Structuring seamless user journeys, information architecture, and friction-free flow.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="text-label-md font-label-md text-primary">Flow &amp; Structure</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+            </div>
+          </div>
+          <!-- Skill Card 3 -->
+          <div
+            class="level-1-card bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-6 flex flex-col justify-between h-full">
+            <div>
+              <div
+                class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary mb-5">
+                <span class="material-symbols-outlined text-[24px]" data-icon="schema">schema</span>
+              </div>
+              <h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Wireframing</h3>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">
+                Translating conceptual product strategies into structural low-fidelity blueprints.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="text-label-md font-label-md text-primary">Blueprints &amp; Layouts</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+            </div>
+          </div>
+          <!-- Skill Card 4 -->
+          <div
+            class="level-1-card bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-6 flex flex-col justify-between h-full">
+            <div>
+              <div
+                class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary mb-5">
+                <span class="material-symbols-outlined text-[24px]" data-icon="touch_app">touch_app</span>
+              </div>
+              <h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Prototyping</h3>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">
+                Building interactive, tactile mockups to validate motion, micro-interactions, and logic.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="text-label-md font-label-md text-primary">Interactive States</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+            </div>
+          </div>
+          <!-- Skill Card 5 -->
+          <div
+            class="level-1-card bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-6 flex flex-col justify-between h-full">
+            <div>
+              <div
+                class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary mb-5">
+                <span class="material-symbols-outlined text-[24px]" data-icon="groups">groups</span>
+              </div>
+              <h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">User Research</h3>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">
+                Conducting interviews and analyzing behavioral feedback to uncover genuine user pain points.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="text-label-md font-label-md text-primary">Empathy &amp; Insight</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+            </div>
+          </div>
+          <!-- Skill Card 6 -->
+          <div
+            class="level-1-card bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-6 flex flex-col justify-between h-full">
+            <div>
+              <div
+                class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary mb-5">
+                <span class="material-symbols-outlined text-[24px]" data-icon="auto_fix_high">auto_fix_high</span>
+              </div>
+              <h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Figma</h3>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">
+                Mastery of auto-layout, design tokens, responsive components, and scalable UI systems.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="text-label-md font-label-md text-primary">Systems &amp; Variables</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 3. PROJECTS SECTION (#projects, bg #FFFFFF) -->
+    <section class="py-24 px-6 max-w-6xl mx-auto" id="projects">
+      <div class="space-y-12">
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+          <div class="space-y-2">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-secondary text-label-caps font-label-caps">
+              FEATURED WORK
+            </div>
+            <h2 class="text-headline-lg font-headline-lg text-on-surface">
+              Selected Case Study
+            </h2>
+          </div>
+          <p class="text-body-md font-body-md text-on-surface-variant max-w-md">
+            A comprehensive look at product thinking, user research, and thoughtful visual execution.
+          </p>
+        </div>
+        <!-- Featured Project Card (Clickable to open Case Study) -->
+        <div aria-label="Open case study for Kibonami Edukasi Keuangan"
+          class="open-case-study cursor-pointer bg-surface-container-lowest border border-outline-variant/40 rounded-3xl p-6 md:p-8 level-1-card transition-all duration-300 hover:border-primary-container/80 group/card"
+          role="button" tabindex="0">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <!-- Project Preview Thumbnail -->
+            <div
+              class="lg:col-span-7 overflow-hidden rounded-2xl border border-outline-variant/30 bg-surface-container-low group">
+              <img alt="Clean modern mobile app UI/UX design mockup showcase for Kibonami financial education app"
+                class="w-full h-auto aspect-[1.79] object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp02Zv6oiMm2o9S63YonfFrgcB5JbdMaaoxqnc_z5fKglf_CH57bOm7DBSDU3XizlQN2EqnjeuqPaAqtMqB0aLPalAWGKyMNj20fOWq-ibSY8v9xSNUnMGgNKE57-bpAVBd6e-nBAgnL-tjQfPf_oFJ651aR8IwBoAlRL8LALD86iYeHZ8-hXlTSN8FWAR0NQ1qyOMQ8JMxKBMKDDo4yXDMhw0rLNrIkFn5InTsX1vKYDnGFO-3cI7rNoJSorCdZSPlw">
+            </div>
+            <!-- Project Details -->
+            <div class="lg:col-span-5 flex flex-col justify-between h-full space-y-6">
+              <div class="space-y-4">
+                <!-- Category Badge -->
+                <div
+                  class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-surface-container text-on-primary-container text-label-md font-label-md">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                  UI/UX Design
+                </div>
+                <h3
+                  class="text-headline-md md:text-headline-lg font-headline-lg text-on-surface tracking-tight group-hover/card:text-primary transition-colors">
+                  Kibonami — Edukasi Keuangan
+                </h3>
+                <p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                  A financial education platform designed to help users understand basic financial concepts, manage
+                  their finances, and develop better financial habits.
+                </p>
+                <!-- Tooling & Attributes -->
+                <div class="pt-2">
+                  <p class="text-label-caps font-label-caps text-tertiary mb-2">TOOLS &amp; TECH</p>
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="px-3.5 py-1.5 rounded-full bg-surface-container-low border border-outline-variant/30 text-on-surface text-label-md font-label-md flex items-center gap-2">
+                      <span class="material-symbols-outlined text-[16px] text-primary"
+                        data-icon="design_services">design_services</span>
+                      Figma
+                    </span>
+                    <span
+                      class="px-3.5 py-1.5 rounded-full bg-surface-container-low border border-outline-variant/30 text-on-surface text-label-md font-label-md">
+                      Design System
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- Action Pill Button -->
+              <div class="pt-4">
+                <button
+                  class="open-case-study inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-primary-container text-on-primary-fixed text-label-lg font-label-lg hover:bg-secondary-fixed-dim transition-all shadow-sm active:scale-95 duration-150 cursor-pointer"
+                  type="button">
+                  <span class="">View Project</span>
+                  <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 4. EXPERIENCE SECTION (#experience, bg #F8FBFD) -->
+    <section class="py-24 px-6 bg-surface-bright border-y border-outline-variant/20" id="experience">
+      <div class="max-w-4xl mx-auto space-y-16">
+        <!-- Header -->
+        <div class="text-center space-y-3">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-secondary text-label-caps font-label-caps">
+            CAREER JOURNEY
+          </div>
+          <h2 class="text-headline-lg font-headline-lg text-on-surface">
+            Work Experience
+          </h2>
+          <p class="text-body-md font-body-md text-on-surface-variant max-w-lg mx-auto">
+            Practical administrative rigor and organizational accountability underpinning user-centered discipline.
+          </p>
+        </div>
+        <!-- Vertical Timeline with 2 Cards -->
+        <div
+          class="relative pl-6 md:pl-10 space-y-12 before:absolute before:left-3 md:before:left-5 before:top-3 before:bottom-3 before:w-0.5 before:bg-outline-variant/30">
+          <!-- Timeline Card 1: Immigration Office -->
+          <div class="relative group">
+            <!-- Timeline Pin Dot -->
+            <div
+              class="absolute -left-[31px] md:-left-[47px] top-6 w-4 h-4 rounded-full bg-surface-container-lowest border-2 border-primary ring-4 ring-primary-container/20 group-hover:scale-125 transition-transform duration-200">
+            </div>
+            <div
+              class="level-1-card bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-6 md:p-8 space-y-4">
+              <div
+                class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-outline-variant/20 pb-4">
+                <div>
+                  <h3 class="text-headline-sm font-headline-sm text-on-surface">Immigration Office</h3>
+                  <div class="flex items-center gap-2 mt-1">
+                    <span class="text-label-md font-label-md text-primary font-semibold">TU (Tata Usaha)</span>
+                    <span class="text-outline-variant">•</span>
+
+                  </div>
+                </div>
+                <div
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-secondary text-label-md font-label-md self-start sm:self-auto">
+                  <span class="material-symbols-outlined text-[16px]" data-icon="calendar_month">calendar_month</span>
+                  <span class="">04 Mei – 04 Agustus 2027</span>
+                </div>
+              </div>
+              <!-- Responsibilities -->
+              <div class="space-y-2.5 pt-2">
+                <p class="text-label-caps font-label-caps text-tertiary">KEY RESPONSIBILITIES</p>
+                <ul class="space-y-2 text-body-sm font-body-sm text-on-surface-variant">
+                  <li class="flex items-start gap-2.5">
+                    <span class="material-symbols-outlined text-primary text-[18px] mt-0.5"
+                      data-icon="check_circle">check_circle</span>
+                    <span class="">Preparing employee attendance sheets with high fidelity and attention to
+                      detail.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="material-symbols-outlined text-primary text-[18px] mt-0.5"
+                      data-icon="check_circle">check_circle</span>
+                    <span class="">Collecting employee signatures for attendance records systematically.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="material-symbols-outlined text-primary text-[18px] mt-0.5"
+                      data-icon="check_circle">check_circle</span>
+                    <span class="">Archiving attendance documents securely ensuring fast information retrieval.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="material-symbols-outlined text-primary text-[18px] mt-0.5"
+                      data-icon="check_circle">check_circle</span>
+                    <span class="">Assisting with ongoing administrative work in the TU department.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Timeline Card 2: PT JTEK -->
+          <div class="relative group">
+            <!-- Timeline Pin Dot -->
+            <div
+              class="absolute -left-[31px] md:-left-[47px] top-6 w-4 h-4 rounded-full bg-surface-container-lowest border-2 border-primary ring-4 ring-primary-container/20 group-hover:scale-125 transition-transform duration-200">
+            </div>
+            <div
+              class="level-1-card bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-6 md:p-8 space-y-4">
+              <div
+                class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-outline-variant/20 pb-4">
+                <div>
+                  <h3 class="text-headline-sm font-headline-sm text-on-surface">PT JTEK</h3>
+                  <div class="flex items-center gap-2 mt-1">
+                    <span class="text-label-md font-label-md text-primary font-semibold">Finance</span>
+                    <span class="text-outline-variant">•</span>
+
+                  </div>
+                </div>
+                <div
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-secondary text-label-md font-label-md self-start sm:self-auto">
+                  <span class="material-symbols-outlined text-[16px]" data-icon="calendar_month">calendar_month</span>
+                  <span class="">17 September – 1 November 2025</span>
+                </div>
+              </div>
+              <!-- Responsibilities -->
+              <div class="space-y-2.5 pt-2">
+                <p class="text-label-caps font-label-caps text-tertiary">KEY RESPONSIBILITIES</p>
+                <ul class="space-y-2 text-body-sm font-body-sm text-on-surface-variant">
+                  <li class="flex items-start gap-2.5">
+                    <span class="material-symbols-outlined text-primary text-[18px] mt-0.5"
+                      data-icon="check_circle">check_circle</span>
+                    <span class="">Inputting invoice data accurately to maintain financial database integrity.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="material-symbols-outlined text-primary text-[18px] mt-0.5"
+                      data-icon="check_circle">check_circle</span>
+                    <span class="">Archiving financial and ledger documents in accordance with compliance
+                      standards.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="material-symbols-outlined text-primary text-[18px] mt-0.5"
+                      data-icon="check_circle">check_circle</span>
+                    <span class="">Assisting with administrative work in the Finance department.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="material-symbols-outlined text-primary text-[18px] mt-0.5"
+                      data-icon="check_circle">check_circle</span>
+                    <span class="">Organizing critical company documents for periodic audits and reconciliation.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 5. EDUCATION SECTION (#education, bg #FFFFFF) -->
+    <section class="py-24 px-6 max-w-6xl mx-auto" id="education">
+      <div class="space-y-12">
+        <!-- Header -->
+        <div class="text-center space-y-3">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-secondary text-label-caps font-label-caps">
+            ACADEMIC FOUNDATION
+          </div>
+          <h2 class="text-headline-lg font-headline-lg text-on-surface">
+            Education
+          </h2>
+          <p class="text-body-md font-body-md text-on-surface-variant max-w-lg mx-auto">
+            Technical software background blending software engineering concepts with intuitive UI design.
+          </p>
+        </div>
+        <!-- Education Card -->
+        <div
+          class="max-w-2xl mx-auto level-1-card bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-8 relative overflow-hidden">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+            <div class="flex items-center gap-5">
+              <div
+                class="w-16 h-16 rounded-2xl bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+                <span class="material-symbols-outlined text-[32px]" data-icon="school">school</span>
+              </div>
+              <div class="space-y-1">
+                <span class="text-label-caps font-label-caps text-secondary font-bold">VOCATIONAL HIGH SCHOOL</span>
+                <h3 class="text-headline-md font-headline-md text-on-surface">SMKN 1 Karawang</h3>
+                <p class="text-body-md font-body-md text-on-surface-variant">
+                  Rekayasa Perangkat Lunak (RPL)
+                </p>
+              </div>
+            </div>
+            <div
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container text-secondary text-label-md font-label-md">
+              <span class="material-symbols-outlined text-[16px]" data-icon="date_range">date_range</span>
+              <span class="">2024 — 2027</span>
+            </div>
+          </div>
+          <!-- Bottom subtle note -->
+          <div
+            class="mt-6 pt-5 border-t border-outline-variant/20 flex items-center justify-between text-body-sm font-body-sm text-tertiary">
+            <span class="">Specialization: Software Engineering &amp; UI Prototyping</span>
+            <span class="inline-flex items-center gap-1 text-primary text-label-sm font-semibold">
+              <span class="w-2 h-2 rounded-full bg-primary-container"></span>
+              Active Student
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 6. CONTACT SECTION (#contact, bg #F8FBFD) -->
+    <section class="py-24 px-6 bg-surface-bright border-t border-outline-variant/20" id="contact">
+      <div class="max-w-4xl mx-auto text-center space-y-12">
+        <!-- Header -->
+        <div class="space-y-4">
+          <div
+            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container text-secondary text-label-caps font-label-caps">
+            LET'S CONNECT
+          </div>
+          <h2 class="text-display-lg-mobile md:text-display-lg font-display-lg text-on-surface">
+            Let's work together.
+          </h2>
+          <p class="text-body-lg font-body-lg text-on-surface-variant max-w-xl mx-auto leading-relaxed">
+            Have a project or idea in mind? Let's create something meaningful together.
+          </p>
+        </div>
+        <!-- Primary Contact CTA -->
+        <div>
+          <a class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-primary-container text-on-primary-fixed text-label-lg font-label-lg hover:bg-secondary-fixed-dim transition-all shadow-md hover:shadow-lg active:scale-95 duration-150"
+            href="mailto:muhammadfauziyusuf@example.com">
+            <span class="material-symbols-outlined text-[20px]" data-icon="send">send</span>
+            <span class="">Get In Touch</span>
+          </a>
+        </div>
+        <!-- 4 Contact Links with Icons Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 max-w-2xl mx-auto">
+          <!-- Email Link -->
+          <a class="level-1-card bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-5 flex flex-col items-center gap-3 hover:border-primary-container transition-colors group"
+            href="mailto:muhammadfauziyusuf@example.com">
+            <div
+              class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-fixed transition-colors">
+              <span class="material-symbols-outlined text-[22px]" data-icon="mail">mail</span>
+            </div>
+            <span
+              class="text-label-md font-label-md text-on-surface group-hover:text-primary transition-colors">Email</span>
+          </a>
+          <!-- Instagram Link -->
+          <a class="level-1-card bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-5 flex flex-col items-center gap-3 hover:border-primary-container transition-colors group"
+            href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+            <div
+              class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-fixed transition-colors">
+              <span class="material-symbols-outlined text-[22px]" data-icon="photo_camera">photo_camera</span>
+            </div>
+            <span
+              class="text-label-md font-label-md text-on-surface group-hover:text-primary transition-colors">Instagram</span>
+          </a>
+          <!-- LinkedIn Link -->
+          <a class="level-1-card bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-5 flex flex-col items-center gap-3 hover:border-primary-container transition-colors group"
+            href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+            <div
+              class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-fixed transition-colors">
+              <span class="material-symbols-outlined text-[22px]" data-icon="work">work</span>
+            </div>
+            <span
+              class="text-label-md font-label-md text-on-surface group-hover:text-primary transition-colors">LinkedIn</span>
+          </a>
+          <!-- GitHub Link -->
+          <a class="level-1-card bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-5 flex flex-col items-center gap-3 hover:border-primary-container transition-colors group"
+            href="https://github.com" rel="noopener noreferrer" target="_blank">
+            <div
+              class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-fixed transition-colors">
+              <span class="material-symbols-outlined text-[22px]" data-icon="terminal">terminal</span>
+            </div>
+            <span
+              class="text-label-md font-label-md text-on-surface group-hover:text-primary transition-colors">GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ================= FOOTER ================= -->
+  <!-- Conforms to Footer in Shared Components JSON -->
+  <footer
+    class="w-full bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant/30 dark:border-outline/30">
+    <div class="max-w-6xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+      <!-- Brand & Copyright -->
+      <div class="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+        <a class="text-headline-sm font-headline-sm font-bold text-on-surface dark:text-inverse-on-surface"
+          href="#home">
+          Muhammad Fauzi Yusuf
+        </a>
+        <span class="hidden sm:inline text-outline-variant">•</span>
+        <p class="text-body-sm font-body-sm text-on-surface-variant dark:text-surface-variant">
+          © 2024 UI/UX Designer. Built with precision and care.
+        </p>
+      </div>
+      <!-- Footer Navigation Links from JSON & Back To Top -->
+      <div class="flex items-center gap-6 flex-wrap justify-center">
+        <a class="text-label-md font-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-container transition-colors duration-200"
+          href="#home">Home</a>
+        <a class="text-label-md font-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-container transition-colors duration-200"
+          href="#about">About</a>
+        <a class="text-label-md font-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-container transition-colors duration-200"
+          href="#projects">Projects</a>
+        <a class="text-label-md font-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-container transition-colors duration-200"
+          href="#experience">Experience</a>
+        <a class="text-label-md font-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-container transition-colors duration-200"
+          href="#education">Education</a>
+        <a class="text-label-md font-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-container transition-colors duration-200"
+          href="#contact">Contact</a>
+        <!-- Back to top anchor button -->
+        <a aria-label="Back to top"
+          class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary-fixed transition-colors ml-2"
+          href="#home">
+          <span class="material-symbols-outlined text-[18px]" data-icon="north">north</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!-- ================= CASE STUDY MODAL DIALOG ================= -->
+  <div aria-labelledby="modal-title" aria-modal="true"
+    class="fixed inset-0 z-[100] flex items-center justify-center p-3 sm:p-6 transition-all duration-300 ease-out opacity-0 pointer-events-none"
+    id="case-study-modal" role="dialog">
+    <!-- Modal Backdrop -->
+    <div class="fixed inset-0 bg-slate-900/60 backdrop-blur-md transition-opacity duration-300 ease-out"
+      id="modal-backdrop"></div>
+    <!-- Modal Window Container -->
+    <div
+      class="relative w-full max-w-4xl max-h-[92vh] bg-surface-container-lowest rounded-3xl shadow-2xl border border-outline-variant/30 flex flex-col overflow-hidden z-10 transition-all duration-300 ease-out scale-95"
+      id="modal-container">
+      <!-- Modal Sticky Header Bar -->
+      <div
+        class="sticky top-0 z-20 flex items-center justify-between px-6 py-4 bg-surface-container-lowest/95 backdrop-blur-md border-b border-outline-variant/20">
+        <div class="flex items-center gap-3">
+          <span
+            class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-on-primary-container text-label-caps font-label-caps">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+            UI/UX DESIGN • MOBILE APP
+          </span>
+          <span class="hidden sm:inline-block text-outline-variant text-xs">•</span>
+          <span class="hidden sm:inline-block text-tertiary text-label-md font-label-md">Financial Literacy App</span>
+        </div>
+        <!-- Close Button -->
+        <button aria-label="Close modal"
+          class="w-9 h-9 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface hover:text-primary transition-colors flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-primary-container cursor-pointer"
+          id="modal-close-btn">
+          <span class="material-symbols-outlined text-[20px]" data-icon="close">close</span>
+        </button>
+      </div>
+      <!-- Scrollable Modal Content Body -->
+      <div class="modal-scroll overflow-y-auto p-6 md:p-10 space-y-10">
+        <!-- Title & Subtitle -->
+        <div class="space-y-3">
+          <h2 class="text-headline-lg md:text-display-lg-mobile font-display-lg text-on-surface tracking-tight"
+            id="modal-title">
+            Kibonami — Edukasi Keuangan
+          </h2>
+          <p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Empowering Indonesian youth and first-time earners with frictionless financial literacy, gamified budgeting
+            habits, and visual savings goals.
+          </p>
+        </div>
+        <!-- Hero Showcase inside Modal -->
+        <div class="rounded-2xl overflow-hidden border border-outline-variant/30 bg-surface-container-low shadow-sm">
+          <img alt="Kibono-mi financial mindfulness app iPhone mockup showcase"
+            class="w-full h-auto aspect-[1.79] object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxXTPUM40i-s0yfv91NeQe13hjomWsrvNKCxrMhlTang1BkFR0yq-498UwZ8ac8OPR18MTMqyWdrMHGReGr-Wi1doerAW71lINKMll6eSHph0z7WrX_N6yYgUMhjsQAv_oRIcZbG7xculEnfzk2I61s424k4mMwYHoTX4j2ZYi-NW-QKfKguXejDcLsbxGJiyiu2lJe_zzKH1FaJrXz2scVzoGt_sczVPwChc3vLu36bYKnAKx7B5YhPrtLBzDGmXeQg">
+          <div class="p-3 bg-surface-container-low border-t border-outline-variant/20 text-center">
+            <p class="text-label-md font-label-md text-tertiary">Mockup: Kibonami home overview, monthly budget
+              breakdown, and visual savings milestone tracker</p>
+          </div>
+        </div>
+        <!-- Project Metadata Grid -->
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 gap-4 p-5 rounded-2xl bg-surface-bright border border-outline-variant/30">
+          <div>
+            <p class="text-label-caps font-label-caps text-tertiary mb-1">ROLE</p>
+            <p class="text-body-sm font-semibold text-on-surface">Lead UI/UX Designer &amp; Researcher</p>
+          </div>
+          <div>
+            <p class="text-label-caps font-label-caps text-tertiary mb-1">TIMELINE</p>
+            <p class="text-body-sm font-semibold text-on-surface">8 Weeks (Oct - Dec 2024)</p>
+          </div>
+          <div>
+            <p class="text-label-caps font-label-caps text-tertiary mb-1">TOOLS</p>
+            <p class="text-body-sm font-semibold text-on-surface">Figma, FigJam, Maze, Notion</p>
+          </div>
+          <div>
+            <p class="text-label-caps font-label-caps text-tertiary mb-1">DELIVERABLES</p>
+            <p class="text-body-sm font-semibold text-on-surface">Research, Wireframes, Prototype, DS</p>
+          </div>
+        </div>
+        <!-- Section: The Challenge -->
+        <div class="space-y-4">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-secondary text-label-caps font-label-caps">
+            01. THE PROBLEM
+          </div>
+          <h3 class="text-headline-md font-headline-md text-on-surface">The Challenge</h3>
+          <p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Over 65% of Indonesian young adults experience financial anxiety due to poor budgeting discipline, lack of
+            formal financial education, and intimidation by conventional banking applications flooded with jargon and
+            dense numbers. Many start budgeting apps but drop off within 7 days because logging transactions feels like
+            tedious administrative work rather than an encouraging routine.
+          </p>
+        </div>
+        <!-- Section: User Research & Key Insights -->
+        <div class="space-y-4">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-secondary text-label-caps font-label-caps">
+            02. DISCOVERY
+          </div>
+          <h3 class="text-headline-md font-headline-md text-on-surface">User Research &amp; Key Insights</h3>
+          <p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            We conducted qualitative interviews with 18 high school &amp; early college students aged 17–23 and ran an
+            online survey across 140+ participants. The results distilled into 3 core insights:
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+            <div class="p-5 rounded-2xl bg-surface-bright border border-outline-variant/30 space-y-3">
+              <div
+                class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary font-bold">
+                78%
+              </div>
+              <h4 class="text-headline-sm font-headline-sm text-on-surface text-base">Inconsistency</h4>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">Struggled to maintain budgeting habits due to
+                rigid manual input forms and lack of positive reinforcement.</p>
+            </div>
+            <div class="p-5 rounded-2xl bg-surface-bright border border-outline-variant/30 space-y-3">
+              <div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-[20px]" data-icon="flag">flag</span>
+              </div>
+              <h4 class="text-headline-sm font-headline-sm text-on-surface text-base">Visual Milestones</h4>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">Users expressed 3x higher motivation when
+                progress towards a dream purchase or trip was represented visually.</p>
+            </div>
+            <div class="p-5 rounded-2xl bg-surface-bright border border-outline-variant/30 space-y-3">
+              <div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-[20px]" data-icon="lightbulb">lightbulb</span>
+              </div>
+              <h4 class="text-headline-sm font-headline-sm text-on-surface text-base">Bite-sized Learning</h4>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">Young users rejected long finance articles,
+                preferring 2-minute actionable daily micro-tips and quizzes.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Section: Design Process & Solution Architecture -->
+        <div class="space-y-4">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-secondary text-label-caps font-label-caps">
+            03. ARCHITECTURE &amp; ITERATION
+          </div>
+          <h3 class="text-headline-md font-headline-md text-on-surface">Design Process &amp; Solution Architecture</h3>
+          <p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Through rapid low-fidelity paper wireframes to interactive high-fidelity iterations, the navigation model
+            was simplified into 4 primary touchpoints: <strong>Home Dashboard</strong>, <strong>Learn Hub</strong>,
+            <strong>Budget Overview</strong>, and <strong>Savings Goals</strong>. User testing led to replacing complex
+            nested ledger tables with clean donut graphs and high-contrast color badges.
+          </p>
+        </div>
+        <!-- Section: Key Design Features -->
+        <div class="space-y-4">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-secondary text-label-caps font-label-caps">
+            04. KEY HIGHLIGHTS
+          </div>
+          <h3 class="text-headline-md font-headline-md text-on-surface">Key Design Features</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-1">
+            <div class="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 space-y-2.5">
+              <span
+                class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed text-label-md font-label-md">
+                <span class="material-symbols-outlined text-[14px]" data-icon="pie_chart">pie_chart</span>
+                Adaptive Budgeting
+              </span>
+              <h4 class="text-headline-sm font-headline-sm text-on-surface text-base pt-1">Visual Spending Rings</h4>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">Color-coded category meters for groceries,
+                transport, and leisure give immediate clarity at a glance.</p>
+            </div>
+            <div class="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 space-y-2.5">
+              <span
+                class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-md font-label-md">
+                <span class="material-symbols-outlined text-[14px]" data-icon="savings">savings</span>
+                Gamified Goals
+              </span>
+              <h4 class="text-headline-sm font-headline-sm text-on-surface text-base pt-1">Target Milestone Cards</h4>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">Emergency fund and dream vacation cards with
+                celebratory milestones upon reaching target percentages.</p>
+            </div>
+            <div class="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 space-y-2.5">
+              <span
+                class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-surface-container text-primary text-label-md font-label-md">
+                <span class="material-symbols-outlined text-[14px]" data-icon="auto_stories">auto_stories</span>
+                Bite-sized Edu
+              </span>
+              <h4 class="text-headline-sm font-headline-sm text-on-surface text-base pt-1">Micro-Learning Feed</h4>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">Story-like cards simplifying compound
+                interest, inflation, and healthy saving principles in 60 seconds.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Section: Impact & Results -->
+        <div class="space-y-4">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-secondary text-label-caps font-label-caps">
+            05. OUTCOMES
+          </div>
+          <h3 class="text-headline-md font-headline-md text-on-surface">Impact &amp; Results</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div class="p-5 rounded-2xl bg-surface-bright border border-outline-variant/30 text-center space-y-1">
+              <p class="text-headline-lg font-display-lg text-primary font-bold">+42%</p>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">Task Completion Speed in User Testing</p>
+            </div>
+            <div class="p-5 rounded-2xl bg-surface-bright border border-outline-variant/30 text-center space-y-1">
+              <p class="text-headline-lg font-display-lg text-primary font-bold">4.8 / 5</p>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">Usability Rating from Test Cohort</p>
+            </div>
+            <div class="p-5 rounded-2xl bg-surface-bright border border-outline-variant/30 text-center space-y-1">
+              <p class="text-headline-lg font-display-lg text-primary font-bold">89%</p>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">Reported Better Confidence Managing Budgets
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Footer Actions Bar -->
+      <div
+        class="sticky bottom-0 z-20 flex flex-wrap items-center justify-between gap-3 px-6 py-4 bg-surface-container-lowest/95 backdrop-blur-md border-t border-outline-variant/20">
+        <div class="text-body-sm font-body-sm text-tertiary">
+          Design System &amp; Prototype • Built with Figma
+        </div>
+        <div class="flex items-center gap-3">
+          <button
+            class="px-5 py-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface text-label-lg font-label-lg transition-all cursor-pointer"
+            id="modal-close-secondary-btn" type="button">
+            Close Case Study
+          </button>
+          <a class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-primary-container text-on-primary-fixed text-label-lg font-label-lg hover:bg-secondary-fixed-dim transition-all shadow-sm active:scale-95 duration-150"
+            href="https://www.figma.com" rel="noopener noreferrer" target="_blank">
+            <span class="">Open Prototype in Figma</span>
+            <span class="material-symbols-outlined text-[18px]" data-icon="open_in_new">open_in_new</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ================= JAVASCRIPT FOR MODAL INTERACTION ================= -->
+  <script>
+      (function () {
+        const modal = document.getElementById('case-study-modal');
+        const backdrop = document.getElementById('modal-backdrop');
+        const container = document.getElementById('modal-container');
+        const closeBtn = document.getElementById('modal-close-btn');
+        const secondaryCloseBtn = document.getElementById('modal-close-secondary-btn');
+        const openButtons = document.querySelectorAll('.open-case-study');
+
+        function openModal() {
+          modal.classList.remove('opacity-0', 'pointer-events-none');
+          modal.classList.add('opacity-100', 'pointer-events-auto');
+          container.classList.remove('scale-95');
+          container.classList.add('scale-100');
+          document.body.style.overflow = 'hidden';
+          closeBtn.focus();
+        }
+
+        function closeModal() {
+          modal.classList.remove('opacity-100', 'pointer-events-auto');
+          modal.classList.add('opacity-0', 'pointer-events-none');
+          container.classList.remove('scale-100');
+          container.classList.add('scale-95');
+          document.body.style.overflow = '';
+        }
+
+        openButtons.forEach(btn => {
+          btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            openModal();
+          });
+          // Accessibility: allow opening via Enter or Space key on role="button" elements
+          btn.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              openModal();
+            }
+          });
+        });
+
+        closeBtn.addEventListener('click', closeModal);
+        if (secondaryCloseBtn) {
+          secondaryCloseBtn.addEventListener('click', closeModal);
+        }
+        backdrop.addEventListener('click', closeModal);
+
+        // Close on Escape key
+        window.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && modal.classList.contains('opacity-100')) {
+            closeModal();
+          }
+        });
+      })();
+  </script>
+
+
+</body>
+
+</html>
